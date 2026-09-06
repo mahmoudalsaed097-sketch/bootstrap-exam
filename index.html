@@ -12,27 +12,33 @@
 
 
 <link rel="stylesheet" href="css/style.css">
-    <body>
+    <body data-bs-spy="scroll">
         <!-- ===============navbar========================= -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary bg-light">
-  <div class="container-fluid ps-5 pe-5  justify-content-lg-around ">
+<nav style="z-index: 10;" class="navbar navbar-expand-lg bg-body-tertiary bg-light">
+  <div class=" container-fluid ps-5 pe-5  justify-content-lg-around ">
 
     <div>
     <a class="navbar-brand" href="#">EliteHomes</a>
     </div>
 
 <div>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button id="button" style="border: none; background:none;" class="my" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class=" " style="border:none;"><i  class=" i111  fa-solid fa-bars" style="color: rgb(8, 7, 7);"></i>
+                                           <i class="i222 fa-solid fa-xmark" style="color: rgb(55, 52, 52);"></i>
+      </span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item me-5">
-          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        
+      
+        <li class="li1 nav-item me-5">
+           <div class="li11 d-none d-lg-block"></div>
+          <a class="nav-link active "  aria-current="page" href="#home">Home</a>
         </li>
 
- <li class="nav-item dropdown me-5">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <li class="li2 nav-item dropdown me-5" >
+  <div class="test11"><div class="li22 d-none d-lg-block"></div></div>
+          <a style="position: relative;bottom: 10px;" class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" >
             Properties
           </a>
 <!-- ==================== -->
@@ -126,17 +132,22 @@
           <!-- ============================ -->
         </li>
 
-        <li class="nav-item me-5">
-          <a class="nav-link" href="#sec2">Services</a>
+        <li  class="li3 nav-item me-5 " data-bs-toggle="pill" >
+          <div class="li33 d-none d-lg-block"></div>
+          <a class=" nav-link" href="#sec3">Services</a>
         </li>
-        <li class="nav-item me-5">
-          <a class="nav-link" href="#sec3">Testimonials</a>
+        <li class=" li4 nav-item me-5" data-bs-toggle="pill" >
+          <div class="li44 d-none d-lg-block"></div>
+          <a class="nav-link" href="#sec4">Testimonials</a>
         </li>
-         <li class="nav-item me-5">
-          <a class="nav-link" href="#sec4">FAQ</a>
+
+         <li class="li4 nav-item me-4" data-bs-toggle="pill" >
+           <div class="li44 d-none d-lg-block"></div>
+          <a class="nav-link" href="#sec5">FAQ</a>
         </li>
-         <li class="nav-item me-5">
-          <a class="nav-link" href="#sec5">Contact</a>
+         <li class="li5 nav-item me-5" data-bs-toggle="pill" >
+          <div class="li55 d-none d-lg-block"></div>
+          <a class="nav-link" href="#sec6">Contact</a>
         </li>
        
       </ul>
@@ -150,7 +161,7 @@
 <!-- =================sec1=========================== -->
  <div id="home" class="sec1">
 <div class="sec11">
-<div class="header text-center mt-5">
+<div class="header text-center mt-5 w-75 m-auto">
   <h1>Find Your Dream Home</h1>
   <p>Discover exceptional properties in prime locations. From modern condos to luxury estates, we help you find the perfect place to call home.</p>
 </div>
@@ -179,7 +190,7 @@
     <select class="col-12 col-lg-3 w-100">
         <option value="">Any Price</option>
           <option value="">$0 - $500K</option>
-         <option value="">$500 - $1M</option>
+         <option value="">$500 - $1M</op]tion>
           <option value="">$1M - $2M</option>
            <option value="">$2M+</option>
         
@@ -673,7 +684,7 @@
 </div>
 <!-- ============================================================= -->
 <!-- =================================slider=============================== -->
-<div class="container1 ">
+<div id="sec4" class="container1 ">
 <div class="header text-center">
 <div class="head d-flex align-items-center">
   <div class="line1 me-3"></div>
@@ -796,7 +807,7 @@
 </div>
 <!-- ==================================================== -->
 <!-- ====================acordion================================ -->
-<div id="sec4" class="container2 ">
+<div id="sec5" class="container2 ">
 <div class="header text-center">
 <div class="head d-flex align-items-center">
   <div class="line1 me-3"></div>
@@ -1050,7 +1061,7 @@
 
 
 
-<div id="sec5" class="finall text-light">
+<div id="sec6" class="finall text-light">
 <div class="head  row">
   <h2 class="col-lg-4">EliteHomes</h2>
   <p class="col-lg-4">© 2025 EliteHomes. All rights reserved.</p>

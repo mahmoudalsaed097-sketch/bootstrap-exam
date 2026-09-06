@@ -1,6 +1,172 @@
 body{margin: 0;
 
 }
+#button {
+    background-color: none !important;
+    
+}
+.test11{
+   
+    width: 100%;
+    height: 10px;
+    position: relative !important;
+    top: 42px;
+    overflow: hidden;
+}
+
+.li22{
+    background-color: #8247F1;
+    width: 100px;
+    height:2px;
+    position: absolute;
+    left: -110px;
+    transition: all 0.4s;
+  
+}
+.li2 .active{
+background-color: #03a042 !important;
+}
+
+
+.navbar .nav-link[aria-expanded="true"]{
+   .navbar{ 
+    background-color: #432DD7 !important;
+}
+}
+.i111{
+    display: none;
+}
+.i222{
+    display: none;
+}
+
+
+#button:hover i{color: #7F22FE !important;}
+.li1{
+    position: relative;
+     overflow: hidden;
+}
+.li11{
+    background-color:#8247F1;
+    width: 100px;
+    height:2px;
+    position: absolute;
+    top: 40px;
+    left: -110px;
+    transition: all 0.4s;
+
+}
+.li1:focus .li11{
+    transform: translate(80px);
+}
+/* ================= */
+.li2{
+    position: relative;
+       
+
+}
+
+/* ================= */
+.li3{
+    position: relative;
+        overflow: hidden;
+
+}
+.li33{
+    background-color: #8247F1;
+    width: 80px;
+    height:2px;
+    position: absolute;
+    top: 40px;
+    left: -110px;
+    transition: all 0.4s;
+  
+}
+.li3:focus .li33{
+    transform: translate(110px) !important;
+}
+/* ===================== */
+
+.li4{
+    position: relative;
+        overflow: hidden;
+
+}
+.li44{
+    background-color: #8247F1;
+    width: 110px;
+    height:2px;
+    position: absolute;
+    top: 40px;
+    left: -110px;
+    transition: all 0.4s;
+  
+}
+
+
+/* ===================== */
+
+.li5{
+    position: relative;
+        overflow: hidden;
+
+}
+.li55{
+    background-color: #8247F1;
+    width: 110px;
+    height:2px;
+    position: absolute;
+    top: 40px;
+    left: -110px;
+    transition: all 0.4s;
+  
+}
+.li5:hover .li55{
+    transform: translate(110px);
+}
+/* ===================== */
+
+.li6{
+    position: relative;
+        overflow: hidden;
+
+}
+.li66{
+    background-color:#8247F1;
+    width: 110px;
+    height:2px;
+    position: absolute;
+    top: 40px;
+    left: -110px;
+    transition: all 0.4s;
+  
+}
+.li1:hover .li11{
+    transform: translate(110px);
+}
+.li2:hover .li22{
+    transform: translate(110px);
+}
+.li3:hover .li33{
+    transform: translate(110px);
+}
+.li4:hover .li44{
+    transform: translate(110px);
+}
+.li5:hover .li55{
+    transform: translate(110px);
+}
+.li6:hover .li66{
+    transform: translate(110px);
+}
+
+li:hover{
+    background-color: #F5F3FF;
+    color: #7F22FE;
+
+}
+
+/* ===================== */
 .navbar{
     background-color:#D7D8DC;
     position: fixed;
@@ -1091,8 +1257,9 @@ font-weight: 600;
     color: #7008E7;
     font-weight: 600px;
 }
-.accordion-item{
-    height: 70px !important;
+.accordion-item button:focus{
+   background:none !important;
+  
 } 
 .container1 .header p{
 color: #DDD6FF;
@@ -1160,13 +1327,13 @@ font-weight: 400;
 
 
 .container2 .accordion-item{
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 5px 5px 10px black;
    
 } 
 
 .container2{
     width: 100% !important;
-    margin-top: 70px;
+   
    
     
     padding: 20px 0px;
@@ -1786,7 +1953,7 @@ border-radius:10px ;}
        top: 0;
      
 
-   .fot      display: flex;
+   .fot{      display: flex;
         justify-content: space-between;
     }
    .part2{
@@ -1810,9 +1977,62 @@ border-radius:10px ;}
     display:  block !important;
    }
 }
+}
 @media (max-width:700px) {
     
 
  .circle,.circle2{
         display: none;
     }}
+    @media (max-width:991px) {
+       .navbar .container-fluid ul{
+    position: absolute ;
+    left: 0px;
+    background-color: rgb(248, 246, 246) !important;
+    width: 100% !important;
+   
+      
+}
+      .navbar .container-fluid li{
+        padding-left: 15px !important;
+        width: 100%;
+      
+       
+      }
+    .navbar .container-fluid li:hover{
+    background-color: #dad5f7 !important;
+    color: #7F22FE;
+
+}
+
+.my[aria-expanded="true"] {
+ .i111{
+    display: none;
+ } 
+  .i222{
+    display: block;
+ }
+}
+.my[aria-expanded="false"] {
+ .i111{
+    display: block;
+ } 
+  .i222{
+    display: none;
+ } 
+}
+    }
+
+
+
+
+#sec1,#sec2,#sec3,#sec4,#sec6{
+    scroll-margin-top:60px ;
+}
+
+
+
+
+
+
+
