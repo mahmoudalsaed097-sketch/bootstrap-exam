@@ -166,6 +166,11 @@ li:hover{
     color: #7F22FE;
 
 }
+    #co:hover{color: #7F22FE;
+      cursor: pointer;
+    }
+
+
 
 /* ===================== */
 .navbar{
@@ -176,10 +181,7 @@ li:hover{
     width: 100%;
 }
 
-.dropdown-menu{
-    background-color: aqua;
-   
-}
+
 .bg1{
     background-image:linear-gradient(rgba(118, 6, 64, 0.34)) ,url(../new-york.jpeg);
     background-position:center ;
@@ -401,9 +403,7 @@ background-attachment: fixed;
     
     
 }
-.sec1{
-     
-}
+
 .sec1 h1{
      color: #FFFFFF;
      font-size: 26px;
@@ -481,7 +481,7 @@ background-attachment: fixed;
     background-color: #7C8490;
     border-radius: 10px;
     background-color: #FFFFFF;
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 5px 5px 10px black;
     width: 90%;       
      margin-bottom: 20px;
      height: 100%;
@@ -584,7 +584,7 @@ font-weight: 600;
     background-color: #7C8490;
     border-radius: 10px;
     background-color: #FFFFFF;
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 5px 5px 10px black;
     width: 90%;
      margin-bottom: 20px;
      height: 100%;       
@@ -686,7 +686,7 @@ font-weight: 600;
     background-color: #7C8490;
     border-radius: 10px;
     background-color: #FFFFFF;
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 5px 5px 10px black;
         width: 90%;
         margin-bottom: 20px;
         height: 100%;
@@ -1617,7 +1617,7 @@ color: black;
     padding: 20px;
     height: 100%;
     width: 90%;
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 5px 5px 10px black;
     transition: all 0.3s;
 }
 .container3 .card4 .i{
@@ -1938,6 +1938,34 @@ background-color:#7F22FE;
 .cont{background-color: white;
 border-radius:10px ;}
 /* ===================================== */
+
+
+
+#sec1,#sec2,#sec3,#sec4,#sec6{
+    scroll-margin-top:60px !important;
+}
+
+
+
+.s1:hover h5{
+    color: #7F41FD;
+}
+.s1:hover .ii{
+transform: translate(10px);
+}
+.s2:hover h5{
+    color: #0eb81d;
+}
+.s2:hover .ii{
+transform: translate(10px);
+}
+.s3:hover h5{
+    color: #9810FA;
+}
+.s3:hover .ii{
+transform: translate(10px);
+}
+
 /* ============media=================== */
 
 @media (min-width:990px) {
@@ -2022,17 +2050,19 @@ border-radius:10px ;}
     display: none;
  } 
 }
-    }
+#wid{
+    width: 50%;
+}
+.nav-item .active{
+    
+    border: none !important;
+}
+.nav-item :hover{
+background-color: #ded8fa;
 
-
-
-
-#sec1,#sec2,#sec3,#sec4,#sec6{
-    scroll-margin-top:60px ;
 }
 
-
-
+    }
 
 
 

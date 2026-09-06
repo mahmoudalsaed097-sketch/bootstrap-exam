@@ -28,12 +28,12 @@
       </span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 " >
         
       
         <li class="li1 nav-item me-5 overflow-hidden ">
            <div class="li11 d-none d-lg-block"></div>
-          <a class="nav-link active "  aria-current="page" href="#home">Home</a>
+          <a class="nav-link  active "  aria-current="page" href="#home">Home</a>
         </li>
 
  <li class="li2 nav-item dropdown me-5" >
@@ -66,16 +66,16 @@
  
                 <div class="part2 mb-5 mt-5 col-lg-3">
                   <h4>Property Types</h4>
-                    <div class=" part22 d-flex justify-content-between ">
+                    <div id="wid" class=" part22 d-flex justify-content-between ">
                     <div class="col-lg-6  ">
-                    <div class="d-flex align-items-center"><i class="fa-solid fa-house me-1" style="color: #99A1AF"></i>  <h6>Single Family Homes</h6></div>
-                    <div class="d-flex align-items-center"><i class="fa-regular fa-building me-1" style="color: #99A1AF"></i>  <h6>Condominiums</h6></div>
-                    <div class="d-flex align-items-center"><i class="fa-solid fa-warehouse me-1" style="color: #99A1AF"></i>  <h6>Land & Lots</h6></div>
+                    <div class="d-flex align-items-center"><i class="fa-solid fa-house me-1" style="color: #99A1AF"></i>  <h6 id="co">Single Family Homes</h6></div>
+                    <div class="d-flex align-items-center"><i class="fa-regular fa-building me-1" style="color: #99A1AF"></i>  <h6 id="co">Condominiums</h6></div>
+                    <div class="d-flex align-items-center"><i class="fa-solid fa-warehouse me-1" style="color: #99A1AF"></i>  <h6 id="co">Land & Lots</h6></div>
                  </div>
 
                  <div class="col-lg-6 col-lg-12">
-                    <div class="d-flex align-items-center"><i class="fa-solid fa-store me-1" style="color: #99A1AF"></i>  <h6>Apartments</h6></div>
-                    <div class="d-flex align-items-center"><i class="fa-solid fa-tree me-1" style="color: #99A1AF"></i>  <h6>Commercial</h6></div>
+                    <div class="d-flex align-items-center"><i class="fa-solid fa-store me-1" style="color: #99A1AF"></i>  <h6 id="co">Apartments</h6></div>
+                    <div class="d-flex align-items-center"><i class="fa-solid fa-tree me-1" style="color: #99A1AF"></i>  <h6 id="co">Commercial</h6></div>
                  </div>  
                  </div>
 
@@ -93,13 +93,14 @@
 
                 <div class="part4 col-lg-3">
                       <h4>Resources</h4>
-                      <div class="d-flex align-content-center flex-wrap " >
+                      <div class="d-flex align-content-center d-lg-block " >
                     <div class="s1 p-2 col-sm-6 col-md-5 col-lg-12 me-2 mt-2">
                         <div class=" d-flex align-items-center">
                         <div class="i1 me-2"><i class="fa-solid fa-book-open" style="color: #7F22FE"></i></div> 
                         <h5>Buying Guide</h5>
                         </div>
                         <p>Essential tips and strategies for first-time homebuyers</p>
+                         <h6 class="d-none d-lg-block">Learn More<span><i class="ii fa-solid fa-arrow-right" style="color:#B310FA"></i></span></h6>
                     
                     </div>
                         <div class="s2 p-2 col-sm-6 col-md-5 col-lg-12 me-2 mt-2">
@@ -108,16 +109,19 @@
                         <h5>Investment Tips</h5>
                         </div>
                         <p>Smart strategies for property investment success</p>
+                             <h6 class="d-none d-lg-block">Learn More<span><i class="ii fa-solid fa-arrow-right" style="color:#0ae24b"></i></span></h6>
+                     </div>
                     </div>
-                        <div class="s3 p-2 col-sm-6 col-md-5 col-lg-12 me-2 mt-2">
+                        <div class="s3 p-2 col-6 col-sm-6 col-md-5 col-lg-12 me-2 mt-2">
                         <div class=" d-flex align-items-center">
-                        <div class="i1 me-2"><i class="fa-solid fa-file-lines" style="color:#9810FA"></i></div> 
+                        <div class="i1 me-2"><i class=" fa-solid fa-file-lines" style="color:#9810FA"></i></div> 
                         <h5>Market Reports</h5>
                         </div>
                         <p>In-depth analysis of real estate market trends</p>
+                        <h6 class="d-none d-lg-block">Learn More<span><i class=" ii fa-solid fa-arrow-right" style="color:#B310FA"></i></span></h6>
                     </div>
 
-                    </div>
+                   
 
                 </div>
 
@@ -996,58 +1000,60 @@
 </div>
 <!-- =======part2=============== -->
 <div class="part2 col-10 col-lg-7  m-auto bg-body-secondary p-5">
+   <form>
 <h1>Send us a message</h1>
 <p>Fill out the form below and we'll get back to you as soon as possible</p>
 
 <div class="hh1  row">
+ 
   <div class="col-12 col-lg-6">
-       <h4>First Name<span class="star">*</span></h4>
-       <input type="text" placeholder="John" class="col-12 ">
+       <label for="Fname" class="mt-3 ms-3">First Name<span class="star">*</span></label>
+       <input type="text" placeholder="John" class="col-12 " required id="Fname">
 </div>
        <div class="col-12 col-lg-6 ">
-       <h4>Last Name<span class="star">*</span></h4>
-       <input type="text" placeholder="Doe" class="col-12 ">
+       <label class="mt-3 ms-3">Last Name<span class="star">*</span></label>
+       <input type="text" placeholder="Doe" class="col-12 " required>
        </div>
   </div>
 
 <div class="hh1 row">
   <div class="col-12 col-lg-6">
-       <h4>Email Address<span class="star">*</span></h4>
-       <input type="text" placeholder="john@example.com" class="col-12 ">
+       <label for="email" class="mt-3 ms-3">Email Address<span class="star">*</span></label>
+       <input type="text" placeholder="john@example.com" required class="col-12">
 </div>
        <div class="col-12 col-lg-6 m">
-       <h4 >Phone Number</h4>
-       <input type="text" placeholder="+1 (555) 000-0000" class="col-12 ">
+       <label for="tel" class="mt-3 ms-3">Phone Number</label>
+       <input type="text" placeholder="+1 (555) 000-0000" class="col-12 " id="tel" required>
   </div>
 </div>
 
 <div class="">
   <div class="col-12">
-       <h4>I'm interested in</h4>
-         <select class="col-12">
-          <option value="">Select a service</option>
-          <option value="">Buying a home</option>
-          <option value="">Selling a home</option>
-          <option value="">Renting a property</option>
-          <option value="">Investment opportunities</option>
-          <option value="">Commercial real estate</option>
-          <option value="">Property management</option>
-          <option value="">Market consultation</option>
+       <label for="list" class="mt-3 ms-3">I'm interested in</label>
+         <select class="col-12" id="list">
+          <option value="Select" id="list">Select a service</option>
+          <option value="Buying" id="list">Buying a home</option>
+          <option value="Selling" id="list">Selling a home</option>
+          <option value="Renting" id="list">Renting a property</option>
+          <option value="Investment" id="list">Investment opportunities</option>
+          <option value="Commercial" id="list">Commercial real estate</option>
+          <option value="Property" id="list">Property management</option>
+          <option value="Market " id="list">Market consultation</option>
          </select>
 
       </div>
        <div class="col-12">
-       <h4>Your Massage<span class="star">*</span></h4>
+       <label for="massage" class="mt-3 ms-3">Your Massage<span class="star">*</span></label>
           <textarea class="col-12" name="massage" id="massage" placeholder="Tell us about your real estate needs..."></textarea>
       </div>
  
       <div class="fot d-flex align-items-center">
-  <input type="checkbox" class="me-2 mb-2"  >
-  <label>I agree to receive marketing communications and updates from EliteHomes</label>
+  <input type="checkbox" class="me-2 mb-2"  id="agree">
+  <label for="agrre">I agree to receive marketing communications and updates from EliteHomes</label>
        </div>
 
             <button class="rounded-4 w-100  m-auto d-flex justify-content-center"><div class="h2"><h2 class="">Send Message</h2> <i class=" ms-2 fa-solid fa-paper-plane" style="color: rgb(254, 254, 253);"></i></div> </button>
-            <p style="font-size: 13px;margin-top: 30px; font-family:EXO, sans-serif; font-weight: 400;">We respect your privacy. Your information will never be shared.</p>
+            <p style="text-align: center  ;  font-size: 13px;margin-top: 50px; font-family:EXO, sans-serif; font-weight: 400;">We respect your privacy. Your information will never be shared.</p>
           </div>
 
 
@@ -1056,7 +1062,7 @@
 
 
 
-
+</form>
 </div>
 </div>
 <div class="circle"><div class="circle2"></div> </div>
